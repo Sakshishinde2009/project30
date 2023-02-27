@@ -98,9 +98,8 @@ function keyPressed() {
     var angle = playerArcher.body.angle+PI/2;
     var arrow = new PlayerArrow(posX, posY, 100, 10);
     arrow.trajectory = [];
-    Matter.Body.setAngle(arrow.body);
-    playerArrows.push(arrow);
-    playerArrows.push(angle);
+    Matter.Body.setAngle(arrow.body, angle); 
+    playerArrows.push(arrow); 
   }
 }
 
