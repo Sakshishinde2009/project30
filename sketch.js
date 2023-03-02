@@ -31,7 +31,7 @@ function setup() {
 
   computerBase = new ComputerBase(
     width - 300,
-    random(450, height - 300),
+    random(450, height - 3 , 300),
     180,
     150
   );
@@ -78,7 +78,7 @@ function draw() {
  
  for (var i=0; i<playerArrows.length; i++) 
  {
- showArrows(playerArrows[i],i);
+ showArrows(i, playerArrows[i]);
  }
 
 
