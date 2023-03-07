@@ -121,7 +121,7 @@ function keyReleased () {
 }
 //Display arrow and Tranjectory
 function showArrows(index, arrows) {
-  arrows[index].display();
+  Arrows[index].display();
   
     
   
